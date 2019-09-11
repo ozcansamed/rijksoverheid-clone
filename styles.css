@@ -1,0 +1,58 @@
+.top-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar {
+    background-color: #01689b;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin: auto;
+}
+
+.wrapper > a {
+    margin-left: 15px;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.wrapper ul {
+    list-style-type: none;
+    display: flex;
+    justify-self: flex-end;
+    margin-left: auto;
+}
+
+.wrapper li {
+    padding: 0 10px;
+}
+
+.wrapper a {
+    color: white;
+    text-decoration: none;
+}
+
+.wrapper a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 1024px) {
+    .wrapper {
+        flex-basis: 80%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        flex-basis: 100%;
+        padding: 0 15px;
+        flex-wrap: wrap;
+    }
+}
