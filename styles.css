@@ -1,10 +1,16 @@
+
+* {
+    --base_color: #01689b;
+    --base_color_darker: #003c5a;
+}
+
 .top-logo {
     display: flex;
     justify-content: center;
 }
 
 .nav-bar {
-    background-color: #01689b;
+    background-color: var(--base_color);
     min-height: 70px;
     display: flex;
     align-items: center;
@@ -19,7 +25,7 @@
 
 .wrapper > a {
     margin-left: 15px;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
@@ -32,6 +38,7 @@
 
 .wrapper li {
     padding: 0 10px;
+    font-size: 1.25rem;
 }
 
 .wrapper a {
@@ -43,16 +50,168 @@
     text-decoration: underline;
 }
 
-@media screen and (min-width: 1024px) {
+.hamburger-button {
+    display: none;
+    justify-self: flex-end;
+    margin-left: auto;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.hamburger-button i {
+    font-size: 2.5rem;
+}
+
+.slide {
+    background-image: url(https://www.rijksoverheid.nl/binaries/widescreen/content/gallery/rijksoverheid/attentie-afbeeldingen/home/2019/isoleren-woning-hero-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding: 40px;
+}
+
+.top-task-navigation {
+    background-color: white; 
+    padding: 15px;
+    color: var(--base_color);
+}
+
+.top-task-navigation h2 {
+    color: black;
+    font-weight: 300;
+}
+
+.tasks {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.tasks li::before {
+    content: "> ";
+    font-weight: 900;
+}
+
+.tasks li a {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: var(--base_color);
+    font-weight: 900;
+    line-height: 2.5rem;
+}
+
+.tasks li a:hover {
+    text-decoration: underline;
+    color: var(--base_color_darker);
+}
+
+.search-bar {
+    justify-self: flex-end;
+    margin-left: auto;
+    display: flex;
+    height: 50px;
+    flex-basis: 33.333%;
+}
+
+.search-bar input {
+    flex-grow: 1;
+}
+
+.search-bar button {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+@media screen and (min-width: 1200px) {
     .wrapper {
         flex-basis: 80%;
     }
+
+    .top-task-navigation {
+        flex-basis: 33.333%;
+    }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 900px) and (max-width: 1200px) {
     .wrapper {
         flex-basis: 100%;
         padding: 0 15px;
         flex-wrap: wrap;
+    }
+
+    .top-task-navigation {
+        flex-basis: 33.333%;
+    }
+
+
+    .wrapper li {
+        font-size: 1rem;
+    }
+
+    
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .wrapper {
+        flex-basis: 100%;
+        padding: 0 15px;
+        flex-wrap: wrap;
+    }
+
+    .slide {
+        flex-wrap: wrap;
+        padding: 40px 20px;
+    }
+
+    .top-task-navigation {
+        flex-basis: 100%;
+        order: 2;
+    }
+
+    .search-bar {
+        order: 1;
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+
+    .wrapper ul {
+        display: none;
+    }
+
+    .hamburger-button {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        flex-basis: 100%;
+        padding: 0 15px;
+        flex-wrap: wrap;
+    }
+
+    .wrapper ul {
+        display: none;
+    }
+
+    .hamburger-button {
+        display: inline-block;
+    }
+
+    .slide {
+        flex-wrap: wrap;
+        padding: 40px 20px;
+    }
+
+    .top-task-navigation {
+        flex-basis: 100%;
+        order: 2;
+    }
+
+    .search-bar {
+        order: 1;
+        flex-basis: 100%;
+        margin-bottom: 10px;
     }
 }
