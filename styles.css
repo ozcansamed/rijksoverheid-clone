@@ -64,7 +64,7 @@
 }
 
 .slide {
-  background-image: url(https://www.rijksoverheid.nl/binaries/widescreen/content/gallery/rijksoverheid/attentie-afbeeldingen/home/2019/isoleren-woning-hero-2.jpg);
+  background-image: url('https://www.rijksoverheid.nl/binaries/widescreen/content/gallery/rijksoverheid/attentie-afbeeldingen/home/2019/basisschool_lerares_hero1920px.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -130,7 +130,8 @@
 .main-content-list,
 .image-content-list,
 .news-list,
-.footer-list {
+.footer-list,
+.languages-wrapper-list {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
@@ -321,6 +322,27 @@ h2 {
 .footer-list-item > h2 {
   display: inline-block;
   font-size: 1.75rem;
+}
+
+.languages-wrapper-list {
+  justify-content: center;
+}
+
+.languages-wrapper-list li {
+  border: 1px solid #b2d7ee;
+  margin: 0 10px;
+  padding: 10px;
+}
+
+.languages-wrapper-list a {
+  color: var(--base_color);
+  text-decoration: none;
+}
+
+.languages-wrapper-list li:first-child {
+  color: var(--base_color_darker);
+  border: none;
+  font-weight: 700;
 }
 
 @media screen and (min-width: 1200px) {
