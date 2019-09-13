@@ -1,471 +1,585 @@
-
 * {
-    --base_color: #01689b;
-    --base_color_darker: #003c5a;
-    --main-content-background: #f3f3f3;
+  --base_color: #01689b;
+  --base_color_darker: #003c5a;
+  --main-content-background: #f3f3f3;
 }
 
 .top-logo {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-bar {
-    background-color: var(--base_color);
-    min-height: 70px;
-    display: flex;
-    align-items: center;
+  background-color: var(--base_color);
+  min-height: 70px;
+  display: flex;
+  align-items: center;
 }
 
 .wrapper {
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    margin: auto;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  margin: auto;
 }
 
 .wrapper > a {
-    margin-left: 15px;
-    font-size: 1.5rem;
-    font-weight: 700;
+  margin-left: 15px;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .wrapper ul {
-    list-style-type: none;
-    display: flex;
-    justify-self: flex-end;
-    margin-left: auto;
+  list-style-type: none;
+  display: flex;
+  justify-self: flex-end;
+  margin-left: auto;
 }
 
 .wrapper li {
-    padding: 0 10px;
-    font-size: 1.25rem;
+  padding: 0 10px;
+  font-size: 1.25rem;
 }
 
 .wrapper a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .wrapper a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .hamburger-button {
-    display: none;
-    justify-self: flex-end;
-    margin-left: auto;
-    background-color: transparent;
-    color: white;
-    border: none;
+  display: none;
+  justify-self: flex-end;
+  margin-left: auto;
+  background-color: transparent;
+  color: white;
+  border: none;
 }
 
 .hamburger-button i {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .slide {
-    background-image: url(https://www.rijksoverheid.nl/binaries/widescreen/content/gallery/rijksoverheid/attentie-afbeeldingen/home/2019/isoleren-woning-hero-2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    padding: 40px;
+  background-image: url(https://www.rijksoverheid.nl/binaries/widescreen/content/gallery/rijksoverheid/attentie-afbeeldingen/home/2019/isoleren-woning-hero-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  padding: 40px;
 }
 
 .top-task-navigation {
-    background-color: white; 
-    padding: 15px;
-    color: var(--base_color);
+  background-color: white;
+  padding: 15px;
+  color: var(--base_color);
 }
 
 .top-task-navigation h2 {
-    color: black;
-    font-weight: 300;
+  color: black;
+  font-weight: 300;
 }
 
 .tasks {
-    list-style-type: none;
-    padding-left: 0;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .tasks li::before {
-    content: "> ";
-    font-weight: 900;
+  content: '> ';
+  font-weight: 900;
 }
 
 .tasks li a {
-    text-decoration: none;
-    font-family: 'Lato', sans-serif;
-    color: var(--base_color);
-    font-weight: 900;
-    line-height: 2.5rem;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  color: var(--base_color);
+  font-weight: 900;
+  line-height: 2.5rem;
 }
 
 .tasks li a:hover {
-    text-decoration: underline;
-    color: var(--base_color_darker);
+  text-decoration: underline;
+  color: var(--base_color_darker);
 }
 
 .search-bar {
-    justify-self: flex-end;
-    margin-left: auto;
-    display: flex;
-    height: 50px;
-    flex-basis: 33.333%;
+  justify-self: flex-end;
+  margin-left: auto;
+  display: flex;
+  height: 50px;
+  flex-basis: 33.333%;
 }
 
 .search-bar input {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .search-bar button {
-    background-color: black;
-    color: white;
-    border: none;
+  background-color: black;
+  color: white;
+  border: none;
 }
 
 .main-content-wrapper {
-    background-color: var(--main-content-background);
+  background-color: var(--main-content-background);
 }
 
-.main-content-list, .image-content-list, .news-list {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    justify-content: space-between;
-    padding-left: 0;
+.main-content-list,
+.image-content-list,
+.news-list,
+.footer-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-between;
+  padding-left: 0;
 }
 
-.content-item a, .news-list-item a {
-    text-decoration: none;
+.content-item a,
+.news-list-item a {
+  text-decoration: none;
 }
 
-.content-item h3, .news-list-item h3 {
-    color: var(--base_color);
-    font-size: 1.5rem;
+.content-item h3,
+.news-list-item h3 {
+  color: var(--base_color);
+  font-size: 1.5rem;
 }
 
 .content-item p {
-    color: var(--base_color_darker);
-    font-weight: 500;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  color: var(--base_color_darker);
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
-.content-item:hover h3, .image-content-item:hover h3, .news-list-item:hover h3, .news-more:hover {
-    text-decoration: underline;
+.content-item:hover h3,
+.image-content-item:hover h3,
+.news-list-item:hover h3,
+.news-more:hover,
+.footer-list-item a:hover {
+  text-decoration: underline;
 }
 
 .image-content-item a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .image-content-item h3 {
-    color: var(--base_color);
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+  color: var(--base_color);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
-.image-content-item p,  .news-list-item p {
-    color: var(--base_color_darker);
+.image-content-item p,
+.news-list-item p {
+  color: var(--base_color_darker);
 }
 
 .image-content-item-image {
-    position: relative;
+  position: relative;
 }
 
 .image-content-item-image p {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    color: white;
-    margin-bottom: 10px;
-    margin-left: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
-.image-content-item-image img{
-    width: 100%;
+.image-content-item-image img {
+  width: 100%;
 }
 
 .external {
-    display: flex;
-    align-items: flex-start;
-    padding-top: 30px;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 30px;
 }
 
 .external h3 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .external i {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 .news-list-item-time {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 .news-wrapper h2 {
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .news-more {
-    text-decoration: none;
-    color: var(--base_color);
-    font-weight: 900;
+  text-decoration: none;
+  color: var(--base_color);
+  font-weight: 900;
 }
 
 .questions-list {
-    display: flex;
-    list-style-type: none;
-    flex-wrap: wrap;
-    padding-left: 0;
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  padding-left: 0;
 }
 
 .questions-list-item {
-    border: 4px solid #cbd2e3;
-    padding: 0 50px;
-    margin-right: 50px; 
-    text-align: center;
-    margin-bottom: 50px;
+  border: 4px solid #cbd2e3;
+  padding: 0 50px;
+  margin-right: 50px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .questions-list-item a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.questions-list-item h1, h2 {
-    margin: 2px 0;
+.questions-list-item h1,
+h2 {
+  margin: 2px 0;
 }
 
 .questions-list-item:first-child h1 {
-    color: var(--base_color);
-    font-size: 3rem;
+  color: var(--base_color);
+  font-size: 3rem;
 }
 
 .questions-list-item:nth-child(2) h2 {
-    color: black;
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 20px;
+  color: black;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 
 .questions-list-item:nth-child(2) {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .questions-list-item:nth-child(2) h1 {
-    color: #a90061;
-    font-size: 2.5rem;
+  color: #a90061;
+  font-size: 2.5rem;
 }
 
 .questions-list-item:first-child h2 {
-    color: black;
-    font-size: 2rem;
-    font-weight: 500;
+  color: black;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.footer-wrapper {
+  background-color: var(--base_color);
+}
+
+.footer-list-item {
+  color: white;
+  padding: 50px 50px;
+  box-sizing: border-box;
+}
+
+.footer-list-item:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-list-item:nth-child(3) {
+  justify-self: flex-start;
+}
+
+.footer-list-item p {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.footer-list-item > ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: inline-block;
+}
+
+.footer-list-item a {
+  color: white;
+  text-decoration: none;
+  line-height: 2rem;
+  font-size: 1.15rem;
+}
+
+.footer-list-item > h2 {
+  display: inline-block;
+  font-size: 1.75rem;
 }
 
 @media screen and (min-width: 1200px) {
-    .wrapper {
-        flex-basis: 80%;
-    }
+  .wrapper {
+    flex-basis: 80%;
+  }
 
-    .top-task-navigation {
-        flex-basis: 33.333%;
-    }
+  .top-task-navigation {
+    flex-basis: 33.333%;
+  }
 
-    .content-item {
-        flex-basis: 22%;
-    }
+  .content-item {
+    flex-basis: 22%;
+  }
 
-    .main-content-wrapper, .image-content-wrapper, .news-wrapper, .questions-wrapper {
-        padding: 50px 10%;
-    }
+  .main-content-wrapper,
+  .image-content-wrapper,
+  .news-wrapper,
+  .questions-wrapper {
+    padding: 50px 10%;
+  }
 
-    .image-content-item, .news-list-item {
-        flex: 1 1 30%;
-        max-width: 30%;
-        margin: 0;
-    }
+  .image-content-item,
+  .news-list-item {
+    flex: 1 1 30%;
+    max-width: 30%;
+    margin: 0;
+  }
 
-    .news-wrapper, .questions-wrapper {
-        padding-top: 0;
-    }
+  .news-wrapper,
+  .questions-wrapper {
+    padding-top: 0;
+  }
 
-    .image-content-wrapper {
-        padding-bottom: 0;
-    }
+  .image-content-wrapper {
+    padding-bottom: 0;
+  }
 
-    .questions-list-item {
-        flex-basis: 30%;
-    }
+  .questions-list-item {
+    flex-basis: 30%;
+  }
+
+  .footer-list-item {
+    flex-basis: 25%;
+    margin: 0;
+  }
+
+  .footer-list-item:first-child {
+    flex-basis: 50%;
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 900px) and (max-width: 1200px) {
-    .wrapper {
-        flex-basis: 100%;
-        padding: 0 15px;
-        flex-wrap: wrap;
-    }
+  .wrapper {
+    flex-basis: 100%;
+    padding: 0 15px;
+    flex-wrap: wrap;
+  }
 
-    .top-task-navigation {
-        flex-basis: 33.333%;
-    }
+  .top-task-navigation {
+    flex-basis: 33.333%;
+  }
 
+  .wrapper li {
+    font-size: 1rem;
+  }
 
-    .wrapper li {
-        font-size: 1rem;
-    }
+  .content-item {
+    flex-basis: 30%;
+  }
 
-    .content-item {
-        flex-basis: 30%;
-    }
+  .main-content-wrapper,
+  .image-content-wrapper,
+  .news-wrapper,
+  .questions-wrapper {
+    padding: 50px 50px;
+  }
 
-    .main-content-wrapper, .image-content-wrapper, .news-wrapper, .questions-wrapper {
-        padding: 50px 50px;
-    }
+  .image-content-item {
+    flex: 0 0 45%;
+  }
 
-    .image-content-item {
-        flex: 0 0 45%;
-    }
+  .news-list-item {
+    flex: 1 1 30%;
+    max-width: 30%;
+    margin: 0;
+  }
 
-    .news-list-item {
-        flex: 1 1 30%;
-        max-width: 30%;
-        margin: 0;
-    }
+  .image-content-item:last-child {
+    flex-grow: 1;
+  }
 
-    .image-content-item:last-child {
-        flex-grow: 1;
-    }
-    
-    .news-wrapper, .questions-wrapper  {
-        padding-top: 0;
-    }
+  .news-wrapper,
+  .questions-wrapper {
+    padding-top: 0;
+  }
 
-    .image-content-wrapper {
-        padding-bottom: 0;
-    }
+  .image-content-wrapper {
+    padding-bottom: 0;
+  }
 
-    .questions-list-item {
-        flex-basis: 30%;
-    }
+  .questions-list-item {
+    flex-basis: 30%;
+  }
+
+  .footer-list-item {
+    flex-basis: 25%;
+    margin: 0;
+  }
+
+  .footer-list-item:first-child {
+    flex-basis: 50%;
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
-    .wrapper {
-        flex-basis: 100%;
-        padding: 0 15px;
-        flex-wrap: wrap;
-    }
+  .wrapper {
+    flex-basis: 100%;
+    padding: 0 15px;
+    flex-wrap: wrap;
+  }
 
-    .slide {
-        flex-wrap: wrap;
-        padding: 40px 20px;
-    }
+  .slide {
+    flex-wrap: wrap;
+    padding: 40px 20px;
+  }
 
-    .top-task-navigation {
-        flex-basis: 100%;
-        order: 2;
-    }
+  .top-task-navigation {
+    flex-basis: 100%;
+    order: 2;
+  }
 
-    .search-bar {
-        order: 1;
-        flex-basis: 100%;
-        margin-bottom: 10px;
-    }
+  .search-bar {
+    order: 1;
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
 
-    .wrapper ul {
-        display: none;
-    }
+  .wrapper ul {
+    display: none;
+  }
 
-    .hamburger-button {
-        display: inline-block;
-    }
+  .hamburger-button {
+    display: inline-block;
+  }
 
-    .content-item {
-        flex-basis: 45%;
-    }
+  .content-item {
+    flex-basis: 45%;
+  }
 
-    .main-content-wrapper, .image-content-wrapper, .news-wrapper, .questions-wrapper {
-        padding: 50px 25px;
-    }
+  .main-content-wrapper,
+  .image-content-wrapper,
+  .news-wrapper,
+  .questions-wrapper {
+    padding: 50px 25px;
+  }
 
-    .image-content-item, .news-list-item {
-        flex: 0 0 45%;
-    }
+  .image-content-item,
+  .news-list-item {
+    flex: 0 0 45%;
+  }
 
-    .image-content-item:last-child {
-        flex-grow: 1;
-    }
+  .image-content-item:last-child {
+    flex-grow: 1;
+  }
 
-    .news-wrapper, .questions-wrapper  {
-        padding-top: 0;
-    }
+  .news-wrapper,
+  .questions-wrapper {
+    padding-top: 0;
+  }
 
-    .image-content-wrapper {
-        padding-bottom: 0;
-    }
+  .image-content-wrapper {
+    padding-bottom: 0;
+  }
 
-    .questions-list-item {
-        flex-basis: 100%;
-    }
+  .questions-list-item {
+    flex-basis: 100%;
+  }
+
+  .footer-list-item {
+    flex-basis: 50%;
+    margin: 0;
+  }
+
+  .footer-list-item:first-child {
+    flex-basis: 100%;
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .wrapper {
-        flex-basis: 100%;
-        padding: 0 15px;
-        flex-wrap: wrap;
-    }
+  .wrapper {
+    flex-basis: 100%;
+    padding: 0 15px;
+    flex-wrap: wrap;
+  }
 
-    .wrapper ul {
-        display: none;
-    }
+  .wrapper ul {
+    display: none;
+  }
 
-    .hamburger-button {
-        display: inline-block;
-    }
+  .hamburger-button {
+    display: inline-block;
+  }
 
-    .slide {
-        flex-wrap: wrap;
-        padding: 40px 20px;
-    }
+  .slide {
+    flex-wrap: wrap;
+    padding: 40px 20px;
+  }
 
-    .top-task-navigation {
-        flex-basis: 100%;
-        order: 2;
-    }
+  .top-task-navigation {
+    flex-basis: 100%;
+    order: 2;
+  }
 
-    .search-bar {
-        order: 1;
-        flex-basis: 100%;
-        margin-bottom: 10px;
-    }
+  .search-bar {
+    order: 1;
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
 
-    .content-item {
-        flex-basis: 100%;
-    }
+  .content-item {
+    flex-basis: 100%;
+  }
 
-    .main-content-wrapper, .image-content-wrapper, .news-wrapper, .questions-wrapper {
-        padding: 50px 10px;
-    }
+  .main-content-wrapper,
+  .image-content-wrapper,
+  .news-wrapper,
+  .questions-wrapper {
+    padding: 50px 10px;
+  }
 
-    .image-content-item, .news-list-item {
-        flex: 0 0 100%;
-    }
+  .image-content-item,
+  .news-list-item {
+    flex: 0 0 100%;
+  }
 
-    .news-wrapper, .questions-wrapper  {
-        padding-top: 0;
-    }
+  .news-wrapper,
+  .questions-wrapper {
+    padding-top: 0;
+  }
 
-    .image-content-wrapper {
-        padding-bottom: 0;
-    }
+  .image-content-wrapper {
+    padding-bottom: 0;
+  }
 
-    .questions-list-item {
-        flex-basis: 100%;
-    }
+  .questions-list-item {
+    flex-basis: 100%;
+  }
+
+  .footer-list-item {
+    flex-basis: 50%;
+    margin: 0;
+  }
+
+  .footer-list-item:first-child {
+    flex-basis: 100%;
+    margin: 0;
+  }
 }
