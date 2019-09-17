@@ -2,11 +2,14 @@
   --base_color: #01689b;
   --base_color_darker: #003c5a;
   --main-content-background: #f3f3f3;
+  margin: 0;
+  padding: 0;
 }
 
 .top-logo {
   display: flex;
   justify-content: center;
+  margin-left: 200px;
 }
 
 .nav-bar {
